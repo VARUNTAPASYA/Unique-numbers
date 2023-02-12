@@ -1,10 +1,16 @@
-//import java.util.Scanner;
+ import java.util.Scanner;
  import java.util.*;
  public class unique {
      public static void main (String[] args) {
-          int arr[] = {1,3,5,3,6,6,4,3,8,3,3,1,1,2,3,3};
-           int n = arr.length;
-          int i,j;
+         Scanner sc=new Scanner(System.in);
+         int a,arr[],n;
+         int i,j;
+         a=sc.nextInt();  
+         arr=new int[a];
+          n = arr.length;
+          for(i=0;i<n;i++){
+        arr[i]=sc.nextInt();
+          }
           Arrays.sort(arr);
            for (i = 0; i < n; i++) {
               for (j = i+1; j < n; j++){
